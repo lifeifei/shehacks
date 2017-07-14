@@ -1,0 +1,12 @@
+{
+  "team": {
+    "name": "Super Team",
+    "girls": [
+      {"name": "Maz"},
+      {"name": "Stephanie"},
+      {"name": "Tania"},
+      {"name": "Lifei"}
+    ]
+  }
+
+}
