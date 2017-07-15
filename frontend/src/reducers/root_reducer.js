@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux'
-import { teamReducer } from './team_reducer';
+import { reducer as reduxFormReducer } from 'redux-form';
+import { routerReducer } from 'react-router-redux';
 
 const rootReducer = combineReducers({
-    team: teamReducer
+    form: reduxFormReducer, // mounted under "form"
+    routing: routerReducer
 });
 
 export default rootReducer;
