@@ -1,0 +1,142 @@
+body {
+    background-color: #0090C9;
+}
+a:hover, a:active, a:link, a:visited {
+    color: #FFFFFF;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+.canvas {
+    background-color: #0090C9;
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    font-size: 16px;
+    box-sizing: border-box;
+    display: flex;
+    font-weight: 100;
+}
+
+.leftCanvas, .rightCanvas {
+    flex: 1 1 auto;
+}
+
+.content {
+    padding-top: 20px;
+    flex: 0 0 700px;
+    text-align: center;
+}
+
+.inputContainer {
+    padding-right: 20px;
+    max-width: 300px;
+}
+
+.inputContainer input {
+    height: 100%;
+    width: 100%;
+    border: 1px solid #cdcdcd;
+}
+.login {
+    margin-top: 15px;
+}
+
+.guide {
+    padding-top: 40px;
+}
+
+.button {
+    background-color: rgb(150, 164, 171);
+    color: #FFFFFF;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+.postedForm {
+    display: flex;
+    padding-top: 5px;
+    justify-content: center;
+}
+
+.postedForm .inputContainer {
+    flex: 1 1 auto;
+}
+
+.postedForm .buttonContainer {
+    flex: 0 0 152px;
+}
+
+.posted {
+    margin-top: 30px;
+}
+
+
+.title {
+    font-size: 60px;
+}
+
+.description {
+    margin-top: 10px;
+}
+
+.guideDescription {
+    padding-top: 15px;
+}
+
+.guideImageContainer {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #FFFFFF;
+    margin: auto;
+}
+
+.guideImageContainer img {
+    width: 80px;
+    height: 80px;
+    vertical-align: middle;
+    margin-top: 10px;
+}
+
+.guideList {
+    display: flex;
+}
+
+.guideItem {
+    flex: 1 1 25%;
+    padding: 20px;
+}
+
+.guideItemDescription {
+    text-align: left;
+    padding-top: 5px;
+}
+
+@media screen and (max-width: 700px) {
+    .canvas {
+        display: block;
+    }
+    .leftCanvas, .rightCanvas {
+        display: none;
+    }
+    .content {
+        padding-top: 100px;
+        flex: 0 0 100%;
+        text-align: center;
+    }
+
+    .guideList {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .guideItemDescription {
+        text-align: center;
+    }
+
+    .content {
+        padding-top: 20px;
+    }
+}
