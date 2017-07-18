@@ -38,6 +38,8 @@ button {
     height: 100%;
     width: 100%;
     border: 1px solid #cdcdcd;
+    color: #000000;
+    font-weight: 400;
 }
 .login {
     margin-top: 15px;
