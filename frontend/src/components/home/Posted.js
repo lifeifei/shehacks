@@ -9,17 +9,18 @@ export class Posted extends React.Component {
         this.props.sendEmailAddress();
     };
     render() {
+        const sendEmailAddressContent = this.props.sendEmailAddressStatus.success ? (<div>Success Message</div>) : <PostedForm onSubmit={this.submit}/>;
         return (
             <div className="posted">
-                <div>We're not live yet, but be one of the first to sign up! </div>
-                <PostedForm onSubmit={this.submit}/>
+                <div>Sign up for beta! </div>
+                {sendEmailAddressContent}
             </div>
         );
     }
 }
 
-const mapStateToProps = () => {
-    return {};
+const mapStateToProps = (state) => {
+    return { sendEmailAddressStatus: state.sendEmailAddress };
 };
 
 const mapDispatchToProps = { sendEmailAddress };

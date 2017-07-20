@@ -1,5 +1,5 @@
 body {
-    background-color: #0090C9;
+    background-color: #0090C9 !important;
 }
 a:hover, a:active, a:link, a:visited {
     color: #FFFFFF;
@@ -17,6 +17,7 @@ button {
     box-sizing: border-box;
     display: flex;
     font-weight: 100;
+    padding: 0 20px 40px 20px;
 }
 
 .leftCanvas, .rightCanvas {
@@ -25,8 +26,9 @@ button {
 
 .content {
     padding-top: 20px;
-    flex: 0 0 700px;
+    flex: 0 0 100%;
     text-align: center;
+    max-width: 700px;
 }
 
 .inputContainer {
@@ -67,7 +69,7 @@ button {
 }
 
 .postedForm .buttonContainer {
-    flex: 0 0 152px;
+    flex: 0 0 84px;
 }
 
 .posted {
@@ -116,7 +118,7 @@ button {
     padding-top: 5px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 599px) {
     .canvas {
         display: block;
     }

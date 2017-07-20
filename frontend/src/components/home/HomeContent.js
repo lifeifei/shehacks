@@ -10,8 +10,8 @@ const HomeContent = () => {
             <div><img src={HomeLogo} alt="Home"/></div>
             <div className="title">paykitty</div>
             <div className="description">POWERING FINANCIAL EQUALITY</div>
-            <Posted/>
             <Guide/>
+            <Posted/>
         </div>
     );
 };

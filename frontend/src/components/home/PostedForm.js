@@ -22,7 +22,7 @@ const PostedForm = ({ handleSubmit }) => {
             </div>
 
             <div className="buttonContainer">
-                <button className="button" type="submit">Keep me posted</button>
+                <button className="button" type="submit">Sign up</button>
             </div>
 
         </form>
